@@ -21,8 +21,8 @@ Search `index.html` for `EDIT HERE` to find each spot.
 |---|---|
 | WhatsApp number | `var WHATSAPP = "972..."` at the top of `assets/site.js` (one place for both pages) |
 | Colors | `:root` block at the top of `assets/site.css` |
-| Program prices | the price card in each tab (`₪380`, `₪420`, `₪650+`, `₪460`) |
-| At-home zone prices | the Private & at home tab (`₪600`, `₪680`, `₪760`) |
+| Program prices | the price card in each tab (Kids `₪260/₪460`, Teens `₪300/₪540`, Adults `₪900`, Private `₪520/₪980`) |
+| At-home zone prices | the Private & at home tab (`₪680`, `₪760`, `₪880`) |
 | Teaching days per city | the About tab, `Where we teach` |
 | Teacher photo | replace `photo.jpg` (square, about 600×600) |
 
