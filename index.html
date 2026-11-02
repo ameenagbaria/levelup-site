@@ -104,6 +104,16 @@ nav a.cta{background:var(--navy);color:#fff;padding:10px 18px;border-radius:999p
 .price b{font-family:var(--display);font-weight:800;font-size:38px}
 .price span{color:var(--muted);font-weight:700}
 
+.exams{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.exam{background:#fff;border:2px solid var(--navy);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.exam h3{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.05}
+.exam .ar{margin:0;font-weight:700;color:var(--muted)}
+.exam p{margin:0;color:var(--muted);font-size:15px}
+.ex-tag{align-self:flex-start;font-weight:800;font-size:12px;padding:3px 10px;border-radius:999px;color:var(--navy)}
+.exam-how{margin-top:18px;background:#fff;border-radius:22px;padding:20px 22px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.exam-how p{margin:0;flex:1 1 420px;min-width:0;color:var(--muted)}
+.exam-how strong{color:var(--ink)}
+
 /* home */
 .panel{background:#fff;border:2px solid var(--navy);border-radius:32px;padding:34px 30px;display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start}
 .panel>*{flex:1 1 360px;min-width:0}
@@ -188,6 +198,7 @@ footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:spac
   </a>
   <nav aria-label="Main">
     <a href="#programs">Programs</a>
+    <a href="#exams">Exam prep</a>
     <a href="#home">At your home</a>
     <a href="#locations">Locations</a>
     <a href="#faq">Parents' FAQ</a>
@@ -263,6 +274,24 @@ footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:spac
       <div class="prog-body"><p>One-on-one at your own pace, starting from your level. Prepaid packs, valid for 3 months.</p>
         <p class="price" style="display:flex;flex-direction:column"><span style="color:var(--ink)"><b style="font-size:30px">₪460</b> <span>/ 4 lessons</span></span><span style="color:var(--ink)"><b style="font-size:30px">₪880</b> <span>/ 8 lessons</span></span></p></div>
     </article>
+  </div>
+</div></section>
+
+<section class="sec" id="exams"><div class="wrap">
+  <div class="sec-head">
+    <div><h2 class="h2">English exam prep</h2><p class="sub">Focused preparation for the tests that open doors, in Israel and abroad.</p></div>
+    <p class="ar-title" lang="ar" dir="rtl" style="font-size:24px">تحضير لامتحانات الإنجليزي</p>
+  </div>
+  <div class="exams">
+    <div class="exam"><span class="ex-tag" style="background:var(--coral)">Israel</span><h3>Psychometric</h3><p class="ar" lang="ar" dir="rtl">البسيخومتري</p><p>The English section of the university entrance exam: vocabulary, sentence completion, restatements and reading.</p></div>
+    <div class="exam"><span class="ex-tag" style="background:var(--coral)">Israel</span><h3>AMIRNET</h3><p class="ar" lang="ar" dir="rtl">أميرنت</p><p>The English placement test for Israeli universities and colleges. A good score can exempt you from English courses.</p></div>
+    <div class="exam"><span class="ex-tag" style="background:var(--sky)">Study abroad</span><h3>TOEFL</h3><p class="ar" lang="ar" dir="rtl">توفل</p><p>Reading, listening, speaking and writing for universities in the US and around the world.</p></div>
+    <div class="exam"><span class="ex-tag" style="background:var(--sky)">Study abroad</span><h3>IELTS</h3><p class="ar" lang="ar" dir="rtl">آيلتس</p><p>For study, work and visas in the UK, Canada, Australia and Europe.</p></div>
+    <div class="exam"><span class="ex-tag" style="background:var(--mint)">US college</span><h3>SAT English</h3><p class="ar" lang="ar" dir="rtl">SAT</p><p>The Reading &amp; Writing section for students applying to colleges in the US.</p></div>
+  </div>
+  <div class="exam-how">
+    <p><strong>How it works:</strong> we look at your target score and test date, then build a plan with practice tests, timing strategies and feedback on your writing and speaking. Small exam groups before each test date, or private lessons any time.</p>
+    <a class="btn btn-primary" href="#contact">Ask about exam prep</a>
   </div>
 </div></section>
 
@@ -351,7 +380,7 @@ footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:spac
       <label for="f-name">Parent or student name<input id="f-name" name="name" type="text" autocomplete="name" required></label>
       <div class="two">
         <label for="f-prog">Program<select id="f-prog" name="program">
-          <option>Kids Club (6–12)</option><option>School Support (7–12)</option><option>Courses (adults)</option><option>Private</option><option>Private at home</option>
+          <option>Kids Club (6–12)</option><option>School Support (7–12)</option><option>Courses (adults)</option><option>Exam prep (Psychometric, AMIRNET, TOEFL, IELTS, SAT)</option><option>Private</option><option>Private at home</option>
         </select></label>
         <label for="f-age">Student age or grade<input id="f-age" name="age" type="text" placeholder="e.g. 9 / grade 10"></label>
       </div>
