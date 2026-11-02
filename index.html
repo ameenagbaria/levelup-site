@@ -9,6 +9,8 @@
 <meta property="og:description" content="English for every age, one level at a time. Haifa, Zalafa, Umm al-Fahm and online.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#14213D">
+<link rel="alternate" hreflang="en" href="/">
+<link rel="alternate" hreflang="ar" href="/ar/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 30'%3E%3Crect x='0' y='18' width='8' height='12' rx='3' fill='%23FF6B4A'/%3E%3Crect x='13' y='9' width='8' height='21' rx='3' fill='%232BB596'/%3E%3Crect x='26' y='0' width='8' height='30' rx='3' fill='%23FFC531'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +55,10 @@ header .wrap{padding-block:12px;display:flex;align-items:center;justify-content:
 nav{display:flex;align-items:center;gap:20px;font-weight:700;font-size:16px}
 nav a{color:var(--ink);text-decoration:none}
 nav a.cta{background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px}
-@media (max-width:860px){nav a:not(.cta){display:none}}
+nav a.lang{border:2px solid var(--navy);padding:7px 14px;border-radius:999px}
+nav{gap:12px}nav a{white-space:nowrap}
+@media (max-width:440px){.logo small{display:none}.logo b{font-size:22px}nav a.cta{padding:9px 14px}}
+@media (max-width:860px){nav a:not(.cta):not(.lang){display:none}}
 
 /* hero */
 .hero{position:relative;overflow:hidden}
@@ -201,6 +206,7 @@ footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:spac
     <a href="#home">At your home</a>
     <a href="#locations">Locations</a>
     <a href="#faq">Parents' FAQ</a>
+    <a class="lang" href="/ar/" lang="ar" hreflang="ar">عربي</a>
     <a class="cta" href="#contact">Register</a>
   </nav>
 </div></header>

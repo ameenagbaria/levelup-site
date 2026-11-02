@@ -6,7 +6,8 @@ Website for Level Up Learning Center: English lessons for all ages in Haifa, Zal
 
 ## How it works
 
-- The whole site is one file: `index.html` (HTML, CSS and a little JavaScript, no build step).
+- Two pages, no build step: `index.html` (English) and `ar/index.html` (Arabic, right-to-left, served at `/ar`). Each page has an `EN | عربي` switch in the header.
+- Content changes (prices, schedule, bio) need to be made in **both** files.
 - Hosted free on Cloudflare Pages. Every commit to `main` deploys automatically in about a minute.
 - The booking form doesn't store anything. It opens WhatsApp with the parent's details filled in.
 
@@ -16,7 +17,7 @@ Search `index.html` for `EDIT HERE` to find each spot.
 
 | What | Where |
 |---|---|
-| WhatsApp number | `const WHATSAPP = "972..."` near the bottom (international format, no `+`) |
+| WhatsApp number | `const WHATSAPP = "972..."` near the bottom of **both** pages (international format, no `+`) |
 | Colors | `:root` block at the top of the `<style>` |
 | Program prices | the `Programs & prices` section (`₪380`, `₪420`, ...) |
 | At-home zone prices | the `We come to you` section (`₪600`, `₪680`, `₪760`) |
