@@ -21,7 +21,7 @@ Search `index.html` for `EDIT HERE` to find each spot.
 | Program prices | the `Programs & prices` section (`₪380`, `₪420`, ...) |
 | At-home zone prices | the `We come to you` section (`₪600`, `₪680`, `₪760`) |
 | Teaching days per city | the `Where we teach` section |
-| Teacher photo | add `photo.jpg` to the repo and swap the "A" in `.photo` for `<img src="photo.jpg" alt="Ameen Agbaria">` |
+| Teacher photo | replace `photo.jpg` (square, about 600×600) |
 
 ## Rolling back
 
