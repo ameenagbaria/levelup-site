@@ -2,12 +2,12 @@
 
 Website for Level Up Learning Center: English lessons for all ages in Haifa, Zalafa, Umm al-Fahm, online, and at students' homes in the North and the Triangle.
 
-**Live site:** https://levelup-learning-english.netlify.app
+**Live site:** https://levelup-learning-eng.pages.dev
 
 ## How it works
 
 - The whole site is one file: `index.html` (HTML, CSS and a little JavaScript, no build step).
-- Hosted free on Netlify. Every commit to `main` deploys automatically in about 30 seconds.
+- Hosted free on Cloudflare Pages. Every commit to `main` deploys automatically in about a minute.
 - The booking form doesn't store anything. It opens WhatsApp with the parent's details filled in.
 
 ## Common edits
@@ -25,4 +25,4 @@ Search `index.html` for `EDIT HERE` to find each spot.
 
 ## Rolling back
 
-Netlify → Deploys → pick an older deploy → **Publish deploy**.
+Cloudflare → Workers & Pages → levelup-learning-eng → Deployments → pick an older one → **Rollback to this deployment**.
