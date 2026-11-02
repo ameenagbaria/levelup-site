@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr" class="no-anim">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Level Up Learning Center | English lessons in Haifa, Zalafa, Umm al-Fahm &amp; online</title>
-<meta name="description" content="English for every age: Kids Club, school support and bagrut prep, adult courses and private lessons. Haifa, Zalafa, Umm al-Fahm, online, or at your home. Exam prep for Psychometric, AMIRNET, TOEFL, IELTS and SAT.">
+<meta name="description" content="English for every age: Kids Club, school support and bagrut, adult courses (business, travel, conversation), exam prep (Psychometric, AMIRNET, TOEFL, IELTS, SAT) and private lessons. Haifa, Zalafa, Umm al-Fahm, online or at your home.">
 <meta property="og:title" content="Level Up Learning Center | ليفل أب">
 <meta property="og:description" content="English for every age, one level at a time. Haifa, Zalafa, Umm al-Fahm and online.">
 <meta property="og:type" content="website">
@@ -14,420 +14,336 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 30'%3E%3Crect x='0' y='18' width='8' height='12' rx='3' fill='%23FF6B4A'/%3E%3Crect x='13' y='9' width='8' height='21' rx='3' fill='%232BB596'/%3E%3Crect x='26' y='0' width='8' height='30' rx='3' fill='%23FFC531'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Baloo+Bhaijaan+2:wght@600;700&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@500;700&display=swap">
-<style>
-/* ===== EDIT HERE: colors ===== */
-:root{
-  --navy:#14213D; --ink:#14213D; --muted:#4B587A; --bg:#F2F7FF; --card:#FFFFFF; --line:#E1E9F5;
-  --yellow:#FFC531; --coral:#FF6B4A; --mint:#2BB596; --sky:#8FB8FF; --blue:#1F5FD1;
-  --display:'Baloo 2',system-ui,sans-serif; --ar-display:'Baloo Bhaijaan 2','Tajawal',sans-serif;
-  --body:'Nunito','Tajawal',system-ui,sans-serif; --ar:'Tajawal',sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
-img{max-width:100%}
-a{color:var(--blue)}
-.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
-.ar{font-family:var(--ar)}
-.ar-title{font-family:var(--ar-display);font-weight:700;color:var(--blue);margin:0}
-h1,h2,h3{margin:0}
-.h2{font-family:var(--display);font-weight:800;font-size:clamp(32px,4vw,52px);line-height:1}
-.sec{padding-block:64px 8px}
-.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px 24px;margin-bottom:26px}
-.sec-head p.sub{margin:6px 0 0;color:var(--muted)}
-.row{display:flex;flex-wrap:wrap;gap:18px}
-.row>*{flex:1 1 250px;min-width:0}
-.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:999px;padding:15px 24px;border:2px solid var(--navy);color:var(--navy);background:#fff;cursor:pointer;font-family:inherit;font-size:17px}
-.btn-primary{background:var(--coral);box-shadow:0 4px 0 var(--navy)}
-.btn-yellow{background:var(--yellow);border-color:var(--yellow);box-shadow:0 4px 0 #0A1328}
-.btn:active{transform:translateY(2px);box-shadow:none}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-
-/* announcement + header */
-.announce{background:var(--yellow);font-weight:700;font-size:15px;text-align:center}
-.announce .wrap{padding-block:9px;display:flex;flex-wrap:wrap;justify-content:center;gap:2px 14px}
-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
-header .wrap{padding-block:12px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-.logo{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
-.logo b{font-family:var(--display);font-weight:800;font-size:25px;line-height:1;display:block}
-.logo small{font-size:13px;font-weight:700;color:var(--muted)}
-nav{display:flex;align-items:center;gap:20px;font-weight:700;font-size:16px}
-nav a{color:var(--ink);text-decoration:none}
-nav a.cta{background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px}
-nav a.lang{border:2px solid var(--navy);padding:7px 14px;border-radius:999px}
-nav{gap:12px}nav a{white-space:nowrap}
-@media (max-width:440px){.logo small{display:none}.logo b{font-size:22px}nav a.cta{padding:9px 14px}}
-@media (max-width:860px){nav a:not(.cta):not(.lang){display:none}}
-
-/* hero */
-.hero{position:relative;overflow:hidden}
-.blob1{position:absolute;width:220px;height:220px;border-radius:50%;background:#FFE08A;top:-60px;right:8%}
-.blob2{position:absolute;width:120px;height:120px;border-radius:32px;background:#BDEBDD;bottom:40px;left:-30px;transform:rotate(18deg)}
-.hero .wrap{position:relative;padding-block:56px 64px;display:flex;flex-wrap:wrap;gap:44px;align-items:center}
-.hero-text{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:18px}
-.chip{align-self:flex-start;background:#fff;border:2px solid var(--navy);border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px}
-.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(42px,6.2vw,86px);line-height:1.12;text-wrap:balance}
-.hl{background:linear-gradient(transparent 14%,var(--yellow) 14%,var(--yellow) 94%,transparent 94%);border-radius:.18em;padding:0 .14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
-.hero .ar-title{font-size:clamp(24px,3.2vw,38px);line-height:1.3;text-align:right}
-.hero p.lead{margin:0;max-width:56ch;color:var(--muted);font-size:19px}
-.btns{display:flex;flex-wrap:wrap;gap:12px;padding-top:4px}
-.level{flex:1 1 320px;min-width:0;background:#fff;border:2px solid var(--navy);border-radius:28px;padding:24px;box-shadow:8px 8px 0 var(--navy);display:flex;flex-direction:column;gap:16px}
-.level-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.level-top b{font-family:var(--display);font-size:22px}
-.tag{background:#BDEBDD;color:#0E5B49;font-weight:800;font-size:13px;padding:4px 10px;border-radius:999px}
-.bar{height:14px;background:var(--line);border-radius:999px;overflow:hidden}
-.bar i{display:block;width:60%;height:100%;background:var(--mint);border-radius:999px}
-.report{background:#E7F7EE;border-radius:18px 18px 18px 4px;padding:16px;display:flex;flex-direction:column;gap:12px}
-.report .who{margin:0;font-weight:800;font-size:15px}
-.report ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15px}
-.report li{display:flex;gap:8px;align-items:flex-start}
-.ck{flex:0 0 auto;width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314213D' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
-.skills{display:flex;flex-direction:column;gap:10px}
-.sk{display:flex;justify-content:space-between;font-weight:700;font-size:14px;margin-bottom:4px}
-.report .time{margin:0;font-size:12px;color:var(--muted);text-align:right}
-.small{font-size:15px;color:var(--muted);margin:0}
-
-/* trust strip */
-.trust{background:var(--navy);color:#fff}
-.trust .wrap{padding-block:36px;display:flex;flex-wrap:wrap;gap:24px}
-.trust .item{flex:1 1 230px;min-width:0;display:flex;gap:14px;align-items:flex-start}
-.ico{flex:0 0 auto;width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center}
-.trust h3{font-size:18px;font-weight:800}
-.trust p{margin:2px 0 0;color:#C8D2E6;font-size:15px}
-
-/* programs */
-.prog{background:#fff;border:2px solid var(--navy);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
-.prog.pop{box-shadow:6px 6px 0 var(--navy)}
-.prog-top{padding:20px 22px 16px}
-.prog-top .age{margin:0;font-weight:800;font-size:14px}
-.prog-top h3{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.05;margin-top:2px}
-.prog-top .ar{margin:0;font-weight:700;text-align:right}
-.prog-body{padding:18px 22px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
-.prog-body p{margin:0;color:var(--muted);font-size:16px}
-.price{margin-top:auto!important;color:var(--ink)!important}
-.price b{font-family:var(--display);font-weight:800;font-size:38px}
-.price span{color:var(--muted);font-weight:700}
-
-.exams{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.exam{background:#fff;border:2px solid var(--navy);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:6px}
-.exam h3{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.05}
-.exam .ar{margin:0;font-weight:700;color:var(--muted)}
-.exam p{margin:0;color:var(--muted);font-size:15px}
-.exam-how{margin-top:18px;background:#fff;border-radius:22px;padding:20px 22px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
-.exam-how p{margin:0;flex:1 1 420px;min-width:0;color:var(--muted)}
-.exam-how strong{color:var(--ink)}
-
-/* home */
-.panel{background:#fff;border:2px solid var(--navy);border-radius:32px;padding:34px 30px;display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start}
-.panel>*{flex:1 1 360px;min-width:0}
-.home-text{display:flex;flex-direction:column;gap:14px}
-.home-text p{margin:0;color:var(--muted)}
-.zones{display:flex;flex-direction:column;gap:12px}
-.zone{display:flex;align-items:center;gap:16px;border-radius:20px;padding:16px 18px}
-.zone .n{flex:0 0 auto;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:20px}
-.zone .t{flex:1;min-width:0}
-.zone h3{font-size:17px;font-weight:800}
-.zone p{margin:0;font-size:14px;color:var(--muted)}
-.zone .p{text-align:right;flex:0 0 auto;margin:0}
-.zone .p b{font-family:var(--display);font-weight:800;font-size:26px}
-.zone .p small{display:block;font-size:13px;color:var(--muted);font-weight:700}
-
-/* billing */
-.billing{background:#E3EDFF;border-radius:28px;padding:28px}
-.billing h2{font-family:var(--display);font-weight:800;font-size:30px;margin-bottom:16px}
-.billing h3{font-size:17px;font-weight:800;margin-bottom:4px}
-.billing p{margin:0;font-size:15px;color:var(--muted)}
-
-/* locations */
-.loc{background:#fff;border-radius:22px;padding:22px}
-.loc h3{font-family:var(--display);font-weight:800;font-size:26px}
-.loc h3 .ar{font-size:18px;color:var(--muted);font-weight:700}
-.loc p{margin:4px 0 0;color:var(--muted);font-size:15px}
-.loc.dark{background:var(--navy);color:#fff}
-.loc.dark h3 .ar{color:var(--yellow)}
-.loc.dark p{color:#C8D2E6}
-
-/* teacher */
-.photo-wrap{flex:0 0 auto!important;display:flex;flex-direction:column;align-items:center;gap:12px}
-.photo{width:210px;height:210px;border-radius:40px;background:#FFE08A;border:3px solid var(--navy);box-shadow:6px 6px 0 var(--yellow);overflow:hidden}
-.photo img{width:100%;height:100%;object-fit:cover;display:block}
-
-.teacher{align-items:center}
-.teacher .info{flex:999 1 420px;display:flex;flex-direction:column;gap:10px}
-.teacher .info p{margin:0;max-width:62ch;color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:6px 0}
-.stats div{background:var(--bg);border-radius:16px;padding:12px 14px;display:flex;flex-direction:column}
-.stats b{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.1}
-.stats span{font-size:14px;color:var(--muted);font-weight:700}
-.langs{display:flex;flex-wrap:wrap;gap:8px}
-.langs span{background:#E3EDFF;border-radius:999px;padding:5px 12px;font-weight:700;font-size:14px}
-
-/* faq */
-.faq{background:#fff;border-radius:22px;padding:22px}
-.faq h3{font-size:18px;font-weight:800;margin-bottom:6px}
-.faq p{margin:0;color:var(--muted);font-size:16px}
-
-/* contact */
-.contact{background:var(--navy);color:#fff;border-radius:32px;padding:34px 30px;display:flex;flex-wrap:wrap;gap:34px;position:relative;overflow:hidden}
-.contact>*{flex:1 1 340px;min-width:0;position:relative}
-.contact .lead{display:flex;flex-direction:column;gap:14px}
-.contact .lead p{margin:0;color:#C8D2E6}
-.contact .ar-title{color:var(--yellow);font-size:26px;text-align:right}
-form{display:flex;flex-direction:column;gap:14px}
-label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:700;color:#C8D2E6}
-input,select{font:inherit;font-size:16px;padding:13px 14px;border-radius:14px;border:2px solid #3A4A6B;background:#1C2C4D;color:#fff;width:100%}
-.two{display:flex;flex-wrap:wrap;gap:14px}.two>*{flex:1 1 150px}
-.note{font-size:13px;color:#C8D2E6;margin:0}
-
-footer{background:#fff;border-top:1px solid var(--line);margin-top:56px}
-footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:14px;color:var(--muted);font-weight:600}
-
-/* floating whatsapp */
-.wa{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.2);z-index:30}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@500;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 
-<div class="announce"><div class="wrap">
-  <span>Registration is open: groups, private lessons and exam prep</span>
-  <span class="ar" lang="ar" dir="rtl">التسجيل مفتوح الآن</span>
-</div></div>
+<div class="announce"><div class="wrap">Registration is open: groups, private lessons and exam prep · Every lesson is 60 minutes</div></div>
 
-<header><div class="wrap">
-  <a class="logo" href="#top" aria-label="Level Up Learning Center, home">
-    <svg width="40" height="36" viewBox="0 0 34 30" aria-hidden="true"><rect x="0" y="18" width="8" height="12" rx="3" fill="#FF6B4A"/><rect x="13" y="9" width="8" height="21" rx="3" fill="#2BB596"/><rect x="26" y="0" width="8" height="30" rx="3" fill="#FFC531"/></svg>
-    <span><b>Level Up</b><small>Learning Center · <span class="ar" lang="ar">ليفل أب</span></small></span>
-  </a>
-  <nav aria-label="Main">
-    <a href="#programs">Programs</a>
+<header>
+  <div class="wrap top">
+    <a class="logo" href="#home" aria-label="Level Up Learning Center, home">
+      <svg width="40" height="36" viewBox="0 0 34 30" aria-hidden="true"><rect x="0" y="18" width="8" height="12" rx="3" fill="#FF6B4A"/><rect x="13" y="9" width="8" height="21" rx="3" fill="#2BB596"/><rect x="26" y="0" width="8" height="30" rx="3" fill="#FFC531"/></svg>
+      <span><b>Level Up</b><small>Learning Center</small></span>
+    </a>
+    <div class="actions">
+      <a class="lang" href="/ar/" lang="ar" hreflang="ar">عربي</a>
+      <a class="cta" href="#register">Register</a>
+    </div>
+  </div>
+  <nav class="wrap tabs" aria-label="Programs">
+    <a href="#home">Home</a>
+    <a href="#kids">Kids 5–12</a>
+    <a href="#teens">Teens &amp; Bagrut</a>
+    <a href="#adults">Adults</a>
     <a href="#exams">Exam prep</a>
-    <a href="#home">At your home</a>
-    <a href="#locations">Locations</a>
-    <a href="#faq">Parents' FAQ</a>
-    <a class="lang" href="/ar/" lang="ar" hreflang="ar">عربي</a>
-    <a class="cta" href="#contact">Register</a>
+    <a href="#private">Private &amp; at home</a>
+    <a href="#about">About</a>
   </nav>
-</div></header>
+</header>
 
 <main>
-<section class="hero" id="top">
-  <div class="blob1" aria-hidden="true"></div><div class="blob2" aria-hidden="true"></div>
-  <div class="wrap">
-    <div class="hero-text">
-      <p class="chip">Ages 5 to adult · Haifa · Zalafa · Umm al-Fahm · Online</p>
-      <h1>Learning English should feel like <span class="hl">leveling up.</span></h1>
-      <p class="ar-title" lang="ar" dir="rtl">إنجليزي لكل الأعمار، مستوى بعد مستوى</p>
-      <p class="lead">Kids play, read and talk their way up.<br>Teens get homework help and bagrut prep.<br>Parents get a short report every month so they always know where things stand.</p>
-      <div class="btns">
-        <a class="btn btn-primary" href="#contact">Register now</a>
-        <a class="btn" href="#programs">See programs &amp; prices</a>
-      </div>
-    </div>
-    <div class="level" aria-label="Example of the monthly progress report parents receive on WhatsApp">
-      <div class="level-top"><b>Monthly report</b><span class="tag">Example</span></div>
-      <div class="report">
-        <p class="who">Lina · Grade 5 · Kids Club</p>
-        <ul>
-          <li><span class="ck" aria-hidden="true"></span>Covered: past simple, reading short stories aloud</li>
-          <li><span class="ck" aria-hidden="true"></span>Homework: 7 of 8 done</li>
-          <li><span class="ck" aria-hidden="true"></span>Next month: writing short paragraphs</li>
-        </ul>
-        <div class="skills">
-          <div><div class="sk"><span>Reading</span><span>Great</span></div><div class="bar"><i style="width:80%"></i></div></div>
-          <div><div class="sk"><span>Speaking</span><span>Improving</span></div><div class="bar"><i style="width:60%;background:var(--yellow)"></i></div></div>
+
+<!-- =================== HOME =================== -->
+<div class="panel-tab" id="tab-home">
+  <section class="hero">
+    <div class="blob1" aria-hidden="true"></div><div class="blob2" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="chip reveal">Ages 5 to adult · Haifa · Zalafa · Umm al-Fahm · Online</p>
+        <h1 class="h1 split-words">Learning English should feel like <span class="hl">leveling up.</span></h1>
+        <p class="lead reveal" style="--d:3">Kids play, read and talk their way up.<br>Teens get homework help and bagrut prep.<br>Adults speak with confidence, for travel, work and business.</p>
+        <div class="btns reveal" style="--d:4">
+          <a class="btn btn-primary" href="#register">Register now</a>
+          <a class="btn" href="#programs-home">Find your program</a>
         </div>
-        <p class="time">Sent on WhatsApp · 1st of the month</p>
       </div>
-      <p class="small">Every parent gets a short update like this each month, so you always know how your child is doing.</p>
+      <div class="level zoom" aria-label="Example of the monthly progress report parents receive on WhatsApp">
+        <div class="level-top"><b>Monthly report</b><span class="tag">Example</span></div>
+        <div class="report">
+          <p class="who">Lina · Grade 5 · Kids Club</p>
+          <ul>
+            <li><span class="ck" aria-hidden="true"></span>Covered: past simple, reading short stories aloud</li>
+            <li><span class="ck" aria-hidden="true"></span>Homework: 7 of 8 done</li>
+            <li><span class="ck" aria-hidden="true"></span>Next month: writing short paragraphs</li>
+          </ul>
+          <div class="skills">
+            <div><div class="sk"><span>Reading</span><span>Great</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div><div class="sk"><span>Speaking</span><span>Improving</span></div><div class="bar"><i style="--w:60%;background:var(--yellow)"></i></div></div>
+          </div>
+          <p class="time">Sent on WhatsApp · 1st of the month</p>
+        </div>
+        <p class="small">Every parent gets a short update like this each month.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="trust" aria-label="Why parents choose us"><div class="wrap">
-  <div class="item"><div class="ico" style="background:var(--yellow)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1.5-4.5 4-4.5"/></svg></div>
-    <div><h3>Small groups, max 8</h3><p>Same age, same level, so every child gets attention.</p></div></div>
-  <div class="item"><div class="ico" style="background:var(--mint)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
-    <div><h3>Monthly report on WhatsApp</h3><p>What we covered, how your child is doing, what's next.</p></div></div>
-  <div class="item"><div class="ico" style="background:var(--coral)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10v8H8l-4 3z"/><path d="M14 10h6v7l-3-2h-3"/></svg></div>
-    <div><h3>Arabic support when needed</h3><p>Lessons in English, explained in Arabic when it helps.</p></div></div>
-  <div class="item"><div class="ico" style="background:var(--sky)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4-8 4-8-4z"/><path d="M7 9.5V14c0 1.7 2.2 3 5 3s5-1.3 5-3V9.5"/></svg></div>
-    <div><h3>Built around school</h3><p>Homework, tests and bagrut 3, 4 and 5 units.</p></div></div>
-</div></section>
+  <section class="wrap" id="programs-home">
+    <div class="reveal" style="margin-bottom:22px"><p class="eyebrow">Find your program</p><h2 class="h2">Who's learning?</h2></div>
+    <div class="aud">
+      <a href="#kids" class="reveal" style="--d:0"><span class="dot" style="background:var(--coral)">5–12</span><h3>Kids</h3><p>Stories, songs and games, grouped by school grade.</p><span class="go">Kids Club →</span></a>
+      <a href="#teens" class="reveal" style="--d:1"><span class="dot" style="background:var(--yellow)">7–12</span><h3>Teens &amp; Bagrut</h3><p>Homework, school tests and bagrut 3, 4 and 5 units.</p><span class="go">School support →</span></a>
+      <a href="#adults" class="reveal" style="--d:2"><span class="dot" style="background:var(--mint)">18+</span><h3>Adults</h3><p>Conversation, travel English and English for business.</p><span class="go">Adult courses →</span></a>
+      <a href="#exams" class="reveal" style="--d:3"><span class="dot" style="background:var(--sky)">A+</span><h3>Exam prep</h3><p>Psychometric, AMIRNET, TOEFL, IELTS and SAT.</p><span class="go">Exam prep →</span></a>
+      <a href="#private" class="reveal" style="--d:4"><span class="dot" style="background:#E3EDFF">1:1</span><h3>Private &amp; at home</h3><p>One-on-one at the center, online, or at your home.</p><span class="go">Private lessons →</span></a>
+    </div>
+  </section>
 
-<section class="sec" id="programs"><div class="wrap">
-  <div class="sec-head">
-    <div><h2 class="h2">Programs &amp; prices</h2><p class="sub">Monthly memberships and fixed-price courses. No counting hours.</p></div>
-    <p class="ar-title" lang="ar" dir="rtl" style="font-size:24px">البرامج والأسعار</p>
-  </div>
-  <div class="row">
-    <article class="prog">
-      <div class="prog-top" style="background:var(--coral)"><p class="age">Ages 5–12</p><h3>Kids Club</h3><p class="ar" lang="ar" dir="rtl">نادي الصغار</p></div>
-      <div class="prog-body"><p>Stories, songs, phonics and speaking games. Twice a week in small groups.</p><p class="price"><b>₪380</b> <span>/ month</span></p></div>
-    </article>
-    <article class="prog pop">
-      <div class="prog-top" style="background:var(--yellow)"><p class="age">Grades 7–12 · Most popular</p><h3>School Support</h3><p class="ar" lang="ar" dir="rtl">دعم مدرسي وبجروت</p></div>
-      <div class="prog-body"><p>Homework help, school tests and bagrut 3, 4 and 5 units. Twice a week, grouped by grade.</p><p class="price"><b>₪420</b> <span>/ month</span></p></div>
-    </article>
-    <article class="prog">
-      <div class="prog-top" style="background:var(--mint)"><p class="age">Adults &amp; exams</p><h3>Courses</h3><p class="ar" lang="ar" dir="rtl">دورات للكبار</p></div>
-      <div class="prog-body"><p>8–12 week courses: spoken English for work, psychometric English, bagrut intensives. Starts with a short chat to find your level.</p><p class="price"><b>₪650+</b> <span>/ course</span></p></div>
-    </article>
-    <article class="prog">
-      <div class="prog-top" style="background:var(--sky)"><p class="age">Any age · Center or online</p><h3>Private</h3><p class="ar" lang="ar" dir="rtl">دروس خصوصية</p></div>
-      <div class="prog-body"><p>One-on-one at your own pace, starting from your level. Prepaid packs, valid for 3 months.</p>
-        <p class="price" style="display:flex;flex-direction:column"><span style="color:var(--ink)"><b style="font-size:30px">₪460</b> <span>/ 4 lessons</span></span><span style="color:var(--ink)"><b style="font-size:30px">₪880</b> <span>/ 8 lessons</span></span></p></div>
-    </article>
-  </div>
-</div></section>
+  <section class="trust" aria-label="Why families choose us"><div class="wrap">
+    <div class="item reveal" style="--d:0"><div class="ico" style="background:var(--yellow)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div><h3>60-minute lessons</h3><p>Every lesson, group or private, is a full hour.</p></div></div>
+    <div class="item reveal" style="--d:1"><div class="ico" style="background:var(--coral)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1.5-4.5 4-4.5"/></svg></div>
+      <div><h3>Small groups, max 8</h3><p>Same age, same stage, so every student gets attention.</p></div></div>
+    <div class="item reveal" style="--d:2"><div class="ico" style="background:var(--mint)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+      <div><h3>Monthly report on WhatsApp</h3><p>Parents see what we covered, how their child is doing and what's next.</p></div></div>
+    <div class="item reveal" style="--d:3"><div class="ico" style="background:var(--sky)"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10v8H8l-4 3z"/><path d="M14 10h6v7l-3-2h-3"/></svg></div>
+      <div><h3>Arabic support when needed</h3><p>Lessons in English, explained in Arabic when it helps.</p></div></div>
+  </div></section>
 
-<section class="sec" id="exams"><div class="wrap">
-  <div class="sec-head">
-    <div><h2 class="h2">English exam prep</h2><p class="sub">Focused preparation for the tests that open doors, in Israel and abroad.</p></div>
-    <p class="ar-title" lang="ar" dir="rtl" style="font-size:24px">تحضير لامتحانات الإنجليزي</p>
-  </div>
-  <div class="exams">
-    <div class="exam"><h3>Psychometric</h3><p class="ar" lang="ar" dir="rtl">البسيخومتري</p><p>The English section of the university entrance exam: vocabulary, sentence completion, restatements and reading.</p></div>
-    <div class="exam"><h3>AMIRNET</h3><p class="ar" lang="ar" dir="rtl">أميرنت</p><p>The English placement test for Israeli universities and colleges. A good score can exempt you from English courses.</p></div>
-    <div class="exam"><h3>TOEFL</h3><p class="ar" lang="ar" dir="rtl">توفل</p><p>Reading, listening, speaking and writing for universities in the US and around the world.</p></div>
-    <div class="exam"><h3>IELTS</h3><p class="ar" lang="ar" dir="rtl">آيلتس</p><p>For study, work and visas in the UK, Canada, Australia and Europe.</p></div>
-    <div class="exam"><h3>SAT English</h3><p class="ar" lang="ar" dir="rtl">SAT</p><p>The Reading &amp; Writing section, used for university applications in the US, Israel and around the world.</p></div>
-  </div>
-  <div class="exam-how">
-    <p><strong>How it works:</strong> we look at your target score and test date, then build a plan with practice tests, timing strategies and feedback on your writing and speaking. Small exam groups before each test date, or private lessons any time.</p>
-    <a class="btn btn-primary" href="#contact">Ask about exam prep</a>
-  </div>
-</div></section>
+  <section class="sec"><div class="wrap">
+    <a href="#about" class="teaser reveal" style="text-decoration:none;color:inherit">
+      <span class="photo"><img src="/photo.jpg" alt="Ameen Agbaria" width="600" height="600"></span>
+      <div><p class="eyebrow">Meet your teacher</p><h2 class="h2" style="font-size:32px">Ameen Agbaria</h2><p>English since age 5, four and a half years in the US, Georgia Tech graduate with highest honors, and Head Teaching Assistant for 3,000+ students.</p><span style="font-weight:800;color:var(--blue)">Read his story →</span></div>
+    </a>
+  </div></section>
+</div>
 
-<section class="sec" id="home"><div class="wrap">
-  <div class="panel">
-    <div class="home-text">
-      <div class="ico" style="background:var(--yellow);width:64px;height:64px;border-radius:20px"><svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
-      <h2 class="h2" style="font-size:clamp(32px,3.8vw,48px)">We come to you</h2>
-      <p class="ar-title" lang="ar" dir="rtl" style="font-size:24px;text-align:right">دروس خصوصية في بيتكم</p>
-      <p>Private lessons at your home, so your child learns where they're most comfortable and you skip the drive. Available in the <strong style="color:var(--ink)">North and the Triangle (<span class="ar" lang="ar">المثلث</span>) only</strong>. The price includes travel and depends on your town.</p>
-      <p style="font-size:15px">Prepaid in packs of 4 lessons. Send your town on WhatsApp and we'll confirm the price.</p>
+<!-- =================== KIDS =================== -->
+<div class="panel-tab" id="tab-kids" hidden>
+  <section class="wrap page-head">
+    <p class="eyebrow reveal">Kids Club · Ages 5–12</p>
+    <h1 class="h1 split-words">English through <span class="hl">play.</span></h1>
+    <p class="lead reveal" style="--d:2">Stories, songs, phonics and speaking games. Kids are grouped by school grade, so they learn alongside children at the same stage.</p>
+    <div class="facts reveal" style="--d:3"><span class="hi">60 minutes per lesson</span><span>2 lessons a week</span><span>Max 8 kids</span><span>Grouped by grade</span></div>
+  </section>
+  <section class="sec"><div class="wrap split">
+    <div class="side reveal"><p class="eyebrow">What they learn</p><h2 class="h2">Step by step, grade by grade</h2></div>
+    <div class="stack">
+      <div class="card line reveal"><span class="k">Ages 5–7</span><h3>Sounds, letters and first words</h3><p>Phonics, songs and picture stories. Lots of listening and speaking before reading.</p></div>
+      <div class="card line reveal"><span class="k">Grades 2–4</span><h3>Reading and everyday talk</h3><p>Short stories, simple sentences and conversation games that build confidence.</p></div>
+      <div class="card line reveal"><span class="k">Grades 5–6</span><h3>Reading, writing and school support</h3><p>Longer texts, short paragraphs and help with what they study in class.</p></div>
+      <div class="card reveal"><h3>Parents stay in the loop</h3><p>A short WhatsApp report every month: what we covered, homework, and what's next.</p></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap">
+    <div class="price-card reveal">
+      <div><p class="per">Kids Club</p><p class="amt">₪380</p><p class="per">per month</p></div>
+      <ul><li>2 lessons a week, 60 minutes each</li><li>Groups of up to 8, by grade</li><li>Monthly report on WhatsApp</li><li>Siblings save 10%</li></ul>
+      <a class="btn btn-yellow" href="#register">Register your child</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- =================== TEENS =================== -->
+<div class="panel-tab" id="tab-teens" hidden>
+  <section class="wrap page-head">
+    <p class="eyebrow reveal">School support &amp; Bagrut · Grades 7–12</p>
+    <h1 class="h1 split-words">From homework to <span class="hl">bagrut day.</span></h1>
+    <p class="lead reveal" style="--d:2">Middle school students are grouped by grade. High school students are grouped by bagrut level, 3, 4 or 5 units, and work on the actual school material.</p>
+    <div class="facts reveal" style="--d:3"><span class="hi">60 minutes per lesson</span><span>2 lessons a week</span><span>Max 8 students</span><span>3 · 4 · 5 units</span></div>
+  </section>
+  <section class="sec"><div class="wrap split">
+    <div class="side reveal"><p class="eyebrow">What we cover</p><h2 class="h2">Built around school</h2></div>
+    <div class="stack">
+      <div class="card line reveal"><span class="k">Grades 7–9</span><h3>Homework and school tests</h3><p>We go over what's taught in class, fill gaps, and prepare for each test.</p></div>
+      <div class="card line reveal"><span class="k">3 units</span><h3>Solid foundations</h3><p>Reading comprehension, vocabulary and writing, step by step toward passing with confidence.</p></div>
+      <div class="card line reveal"><span class="k">4 · 5 units</span><h3>Aiming high</h3><p>Advanced reading, essays, literature and preparation for the oral exam.</p></div>
+      <div class="card reveal"><h3>Exam-season intensives</h3><p>Extra sessions in the weeks before the bagrut to practice past exams under time.</p></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap">
+    <div class="price-card reveal">
+      <div><p class="per">School Support</p><p class="amt">₪420</p><p class="per">per month</p></div>
+      <ul><li>2 lessons a week, 60 minutes each</li><li>Grouped by grade or bagrut units</li><li>Monthly report to parents</li><li>Siblings save 10%</li></ul>
+      <a class="btn btn-yellow" href="#register">Register now</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- =================== ADULTS =================== -->
+<div class="panel-tab" id="tab-adults" hidden>
+  <section class="wrap page-head">
+    <p class="eyebrow reveal">English for adults</p>
+    <h1 class="h1 split-words">Speak English with <span class="hl">confidence.</span></h1>
+    <p class="lead reveal" style="--d:2">For travel, for growing a business, or just for yourself. We start with a short chat to find your level and your goal, then put you in the right course or private plan.</p>
+    <div class="facts reveal" style="--d:3"><span class="hi">60 minutes per lesson</span><span>8–12 week courses</span><span>Small groups or private</span></div>
+  </section>
+  <section class="sec"><div class="wrap">
+    <div class="reveal" style="margin-bottom:22px"><p class="eyebrow">Choose your goal</p><h2 class="h2">What do you need English for?</h2></div>
+    <div class="row">
+      <div class="card line reveal" style="--d:0"><span class="k">Travel</span><h3>English for travel</h3><p>Speaking only, no homework stress: airports, hotels, restaurants, directions, shopping and making friends abroad.</p></div>
+      <div class="card line reveal" style="--d:1"><span class="k">Business</span><h3>English for business</h3><p>For starting or growing a business: pitching your idea, emails, calls and meetings, negotiating, and talking to international clients and suppliers.</p></div>
+      <div class="card line reveal" style="--d:2"><span class="k">Everyday</span><h3>Conversation</h3><p>Small talk, phone calls, understanding films and shows, and finally speaking without freezing.</p></div>
+      <div class="card line reveal" style="--d:3"><span class="k">Writing</span><h3>Grammar and writing</h3><p>Clear, correct English for studies, applications and professional writing.</p></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap split">
+    <div class="side reveal"><p class="eyebrow">Your level</p><h2 class="h2">Start where you are</h2><p class="sub">Levels follow the international A1–C2 scale.</p></div>
+    <div class="card line reveal">
+      <div class="ladder" aria-hidden="true">
+        <div style="--h:22%;background:var(--coral)">A1</div><div style="--h:36%;background:var(--coral)">A2</div>
+        <div style="--h:52%;background:var(--yellow)">B1</div><div style="--h:66%;background:var(--yellow)">B2</div>
+        <div style="--h:82%;background:var(--mint)">C1</div><div style="--h:100%;background:var(--mint)">C2</div>
+      </div>
+      <div class="ladder-labels"><span>Beginner</span><span>Intermediate</span><span>Advanced</span></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap">
+    <div class="price-card reveal">
+      <div><p class="per">Adult courses</p><p class="amt">₪650+</p><p class="per">per course</p></div>
+      <ul><li>8–12 weeks, 60-minute lessons</li><li>Small groups by level and goal</li><li>Prefer one-on-one? See Private lessons</li></ul>
+      <a class="btn btn-yellow" href="#register">Register now</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- =================== EXAMS =================== -->
+<div class="panel-tab" id="tab-exams" hidden>
+  <section class="wrap page-head">
+    <p class="eyebrow reveal">English exam prep</p>
+    <h1 class="h1 split-words">Hit your <span class="hl">target score.</span></h1>
+    <p class="lead reveal" style="--d:2">Focused preparation for the tests that open doors, in Israel and abroad.</p>
+    <div class="facts reveal" style="--d:3"><span class="hi">60 minutes per lesson</span><span>Practice tests</span><span>Groups or private</span></div>
+  </section>
+  <section class="sec"><div class="wrap">
+    <div class="exams">
+      <div class="exam reveal" style="--d:0"><h3>Psychometric</h3><p>The English section of the university entrance exam: vocabulary, sentence completion, restatements and reading.</p></div>
+      <div class="exam reveal" style="--d:1"><h3>AMIRNET</h3><p>The English placement test for Israeli universities and colleges. A good score can exempt you from English courses.</p></div>
+      <div class="exam reveal" style="--d:2"><h3>TOEFL</h3><p>Reading, listening, speaking and writing for universities in the US and around the world.</p></div>
+      <div class="exam reveal" style="--d:3"><h3>IELTS</h3><p>For study, work and visas in the UK, Canada, Australia and Europe.</p></div>
+      <div class="exam reveal" style="--d:4"><h3>SAT English</h3><p>The Reading &amp; Writing section, used for university applications in the US, Israel and around the world.</p></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap split">
+    <div class="side reveal"><p class="eyebrow">How it works</p><h2 class="h2">A plan built around your test date</h2></div>
+    <div class="stack">
+      <div class="card line reveal"><span class="k">1</span><h3>Set the goal</h3><p>Your target score and test date decide the plan.</p></div>
+      <div class="card line reveal"><span class="k">2</span><h3>Practice like the real thing</h3><p>Full practice tests under time, with strategies for each section.</p></div>
+      <div class="card line reveal"><span class="k">3</span><h3>Feedback that moves the score</h3><p>Detailed feedback on your writing and speaking, and extra focus on your weakest sections.</p></div>
+      <div class="card reveal"><h3>Groups or private</h3><p>Small exam groups before each test date, or private lessons any time. Message us for dates and prices.</p></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap"><div class="btns reveal"><a class="btn btn-primary" href="#register">Ask about exam prep</a></div></div></section>
+</div>
+
+<!-- =================== PRIVATE =================== -->
+<div class="panel-tab" id="tab-private" hidden>
+  <section class="wrap page-head">
+    <p class="eyebrow reveal">Private lessons · Any age</p>
+    <h1 class="h1 split-words">One-on-one, <span class="hl">your way.</span></h1>
+    <p class="lead reveal" style="--d:2">At the center, online, or at your home. We start from your level and move at your pace, for school, exams, travel or business.</p>
+    <div class="facts reveal" style="--d:3"><span class="hi">60 minutes per lesson</span><span>Prepaid packs</span><span>Valid for 3 months</span></div>
+  </section>
+  <section class="sec"><div class="wrap">
+    <div class="price-card reveal">
+      <div><p class="per">At the center or online</p><p class="amt">₪460</p><p class="per">4 lessons</p></div>
+      <ul><li>₪880 for 8 lessons</li><li>60 minutes each</li><li>Valid for 3 months</li></ul>
+      <a class="btn btn-yellow" href="#register">Book private lessons</a>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap split">
+    <div class="side reveal">
+      <p class="eyebrow">At your home</p><h2 class="h2">We come to you</h2>
+      <p class="sub">North and the Triangle only. The price includes travel and depends on your town. Prepaid in packs of 4 lessons.</p>
     </div>
     <div class="zones">
-      <div class="zone" style="background:#EAF8F3"><span class="n" style="background:var(--mint)">1</span><div class="t"><h3>Haifa &amp; Wadi Ara</h3><p>Haifa, Zalafa, Umm al-Fahm, Ar'ara, Kafr Qara and nearby</p></div><p class="p"><b>₪600</b><small>4 lessons</small></p></div>
-      <div class="zone" style="background:#FFF5D6"><span class="n" style="background:var(--yellow)">2</span><div class="t"><h3>Triangle &amp; Lower Galilee</h3><p>Baqa, Tayibe, Nazareth, Shefa-'Amr and nearby</p></div><p class="p"><b>₪680</b><small>4 lessons</small></p></div>
-      <div class="zone" style="background:#FFE9E3"><span class="n" style="background:var(--coral)">3</span><div class="t"><h3>Upper Galilee &amp; further north</h3><p>Sakhnin, Karmiel area, Upper Galilee</p></div><p class="p"><b>₪760</b><small>4 lessons</small></p></div>
+      <div class="zone reveal" style="background:#EAF8F3;--d:0"><span class="n" style="background:var(--mint)">1</span><div class="t"><h3>Haifa &amp; Wadi Ara</h3><p>Haifa, Zalafa, Umm al-Fahm, Ar'ara, Kafr Qara and nearby</p></div><p class="p"><b>₪600</b><small>4 lessons</small></p></div>
+      <div class="zone reveal" style="background:#FFF5D6;--d:1"><span class="n" style="background:var(--yellow)">2</span><div class="t"><h3>Triangle &amp; Lower Galilee</h3><p>Baqa, Tayibe, Nazareth, Shefa-'Amr and nearby</p></div><p class="p"><b>₪680</b><small>4 lessons</small></p></div>
+      <div class="zone reveal" style="background:#FFE9E3;--d:2"><span class="n" style="background:var(--coral)">3</span><div class="t"><h3>Upper Galilee &amp; further north</h3><p>Sakhnin, Karmiel area, Upper Galilee</p></div><p class="p"><b>₪760</b><small>4 lessons</small></p></div>
     </div>
-  </div>
-</div></section>
+  </div></section>
+  <section class="sec"><div class="wrap"><div class="billing reveal"><h3>24-hour notice</h3><p>Cancel a private or home lesson at least 24 hours ahead, or it's used from your pack.</p></div></div></section>
+</div>
 
-<section class="sec"><div class="wrap">
-  <div class="billing">
-    <h2>Simple billing for families</h2>
-    <div class="row">
-      <div><h3>Paid on the 1st</h3><p>Cash or bank transfer. You get a receipt every time.</p></div>
-      <div><h3>Missed a class?</h3><p>Make it up the same week in another city or online.</p></div>
-      <div><h3>Siblings save 10%</h3><p>On every extra child's membership.</p></div>
-      <div><h3>24-hour notice</h3><p>To cancel a private or home lesson without using it.</p></div>
-    </div>
-  </div>
-</div></section>
-
-<section class="sec" id="locations"><div class="wrap">
-  <div class="sec-head"><h2 class="h2">Where we teach</h2><p class="ar-title" lang="ar" dir="rtl" style="font-size:24px">وين بنعلّم</p></div>
-  <div class="row">
-    <!-- EDIT HERE: replace "Message us for the schedule" with your days, e.g. "Sundays &amp; Wednesdays" -->
-    <div class="loc"><h3>Haifa <span class="ar" lang="ar">حيفا</span></h3><p>Message us for the schedule · address shared after booking</p></div>
-    <div class="loc"><h3>Zalafa <span class="ar" lang="ar">زلفة</span></h3><p>Message us for the schedule · address shared after booking</p></div>
-    <div class="loc"><h3>Umm al-Fahm <span class="ar" lang="ar">أم الفحم</span></h3><p>Message us for the schedule · address shared after booking</p></div>
-    <div class="loc dark"><h3>Online <span class="ar" lang="ar">أونلاين</span></h3><p>Evenings, from anywhere in Israel</p></div>
-  </div>
-</div></section>
-
-<section class="sec"><div class="wrap">
-  <div class="panel teacher">
-    <!-- EDIT HERE: to change the photo, replace photo.jpg (square, about 600x600) -->
-    <div class="photo-wrap">
-      <div class="photo"><img src="photo.jpg" alt="Ameen Agbaria at his Georgia Tech graduation" width="600" height="600"></div>
-    </div>
-    <div class="info">
-      <p style="font-weight:800;font-size:14px;color:var(--blue)">Meet your teacher · <span class="ar" lang="ar">تعرّفوا على المعلّم</span></p>
-      <h2 class="h2" style="font-size:40px">Ameen Agbaria</h2>
-      <p>English has been part of my life since I was 5, when I started Helen Doron classes in my village. At 11 I took my first trip to the UK, and from then on I spent my summers in English-speaking countries. At 14 I spent a month in New York on my own, taking language courses. Outside of class, I read countless books and grew up on English shows, movies and music, so English became part of my everyday life.</p>
-      <p>In high school I founded a Model UN and Speech &amp; Debate club, run entirely in English, and taught English to more than 50 students while I was still a student myself. That work earned me the Elad Riban Award for Outstanding Youth Volunteer. I competed at conferences in Israel and abroad, won an award at Yale Model United Nations in the US, joined Debate for Peace, and visited the United Nations on a study program, where I met with ambassadors.</p>
-      <p>I then spent four and a half years in the US, plus a semester in France, and graduated in Computer Science from Georgia Tech with highest honors. As Head Teaching Assistant, I taught and supported more than 3,000 students. Now I'm back home, helping students in our community build their English and reach their goals, while also working on my own projects in tech and business.</p>
-      <div class="stats">
-        <div><b>Age 5</b><span>started English</span></div>
-        <div><b>4.5 yrs</b><span>living in the US</span></div>
-        <div><b>50+</b><span>students taught in high school</span></div>
-        <div><b>3,000+</b><span>students at Georgia Tech</span></div>
+<!-- =================== ABOUT =================== -->
+<div class="panel-tab" id="tab-about" hidden>
+  <section class="sec"><div class="wrap">
+    <div class="teacher">
+      <div class="photo zoom"><img src="/photo.jpg" alt="Ameen Agbaria at his Georgia Tech graduation" width="600" height="600"></div>
+      <div class="info">
+        <p class="eyebrow reveal">Meet your teacher</p>
+        <h1 class="h1 split-words" style="font-size:clamp(36px,5vw,60px)">Ameen Agbaria</h1>
+        <p class="reveal">English has been part of my life since I was 5, when I started Helen Doron classes in my village. At 11 I took my first trip to the UK, and from then on I spent my summers in English-speaking countries. At 14 I spent a month in New York on my own, taking language courses. Outside of class, I read countless books and grew up on English shows, movies and music, so English became part of my everyday life.</p>
+        <p class="reveal">In high school I founded a Model UN and Speech &amp; Debate club, run entirely in English, and taught English to more than 50 students while I was still a student myself. That work earned me the Elad Riban Award for Outstanding Youth Volunteer. I competed at conferences in Israel and abroad, won an award at Yale Model United Nations in the US, joined Debate for Peace, and visited the United Nations on a study program, where I met with ambassadors.</p>
+        <p class="reveal">I then spent four and a half years in the US, plus a semester in France, and graduated in Computer Science from Georgia Tech with highest honors. As Head Teaching Assistant, I taught and supported more than 3,000 students. Now I'm back home, helping students in our community build their English and reach their goals, while also working on my own projects in tech and business.</p>
+        <div class="langs reveal"><span>English</span><span lang="ar">العربية</span><span lang="he">עברית</span><span lang="fr">Français</span></div>
       </div>
-      <div class="langs"><span>English</span><span lang="ar">العربية</span><span lang="he">עברית</span><span lang="fr">Français</span></div>
     </div>
-  </div>
-</div></section>
+  </div></section>
+  <section class="sec"><div class="wrap">
+    <div class="stats">
+      <div class="reveal" style="--d:0"><b><span data-to="5" data-pre="Age ">Age 5</span></b><span>started English</span></div>
+      <div class="reveal" style="--d:1"><b><span data-to="4.5" data-dec="1" data-suf=" yrs">4.5 yrs</span></b><span>living in the US</span></div>
+      <div class="reveal" style="--d:2"><b><span data-to="50" data-suf="+">50+</span></b><span>students taught in high school</span></div>
+      <div class="reveal" style="--d:3"><b><span data-to="3000" data-suf="+">3,000+</span></b><span>students at Georgia Tech</span></div>
+    </div>
+  </div></section>
+  <section class="sec" id="locations"><div class="wrap">
+    <div class="reveal" style="margin-bottom:22px"><p class="eyebrow">Locations</p><h2 class="h2">Where we teach</h2></div>
+    <div class="row">
+      <!-- EDIT HERE: replace "Message us for the schedule" with your days -->
+      <div class="loc reveal" style="--d:0"><h3>Haifa</h3><p>Message us for the schedule · address shared after registration</p></div>
+      <div class="loc reveal" style="--d:1"><h3>Zalafa</h3><p>Message us for the schedule · address shared after registration</p></div>
+      <div class="loc reveal" style="--d:2"><h3>Umm al-Fahm</h3><p>Message us for the schedule · address shared after registration</p></div>
+      <div class="loc dark reveal" style="--d:3"><h3>Online</h3><p>Evenings, from anywhere in Israel</p></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="wrap">
+    <div class="billing reveal">
+      <h2 class="h2" style="font-size:30px;margin-bottom:16px">How billing works</h2>
+      <div class="row">
+        <div><h3>Every lesson is 60 minutes</h3><p>Groups and private lessons alike.</p></div>
+        <div><h3>Paid on the 1st</h3><p>Cash or bank transfer. You get a receipt every time.</p></div>
+        <div><h3>Missed a class?</h3><p>Make it up the same week in another city or online.</p></div>
+        <div><h3>Siblings save 10%</h3><p>On every extra child's membership.</p></div>
+      </div>
+    </div>
+  </div></section>
+  <section class="sec" id="faq"><div class="wrap">
+    <div class="reveal" style="margin-bottom:22px"><p class="eyebrow">FAQ</p><h2 class="h2">Parents ask us</h2></div>
+    <div class="row">
+      <div class="card reveal" style="flex-basis:320px"><h3>Is my child too young to start?</h3><p>Kids Club starts at 5. Young kids learn through stories, songs and games, not grammar drills.</p></div>
+      <div class="card reveal" style="flex-basis:320px"><h3>My child is behind at school. Can you help?</h3><p>Yes. School Support is grouped by grade and works on the actual school material, so we start from where your child is in class.</p></div>
+      <div class="card reveal" style="flex-basis:320px"><h3>How long is each lesson?</h3><p>Every lesson is 60 minutes, whether it's a group class or a private lesson.</p></div>
+      <div class="card reveal" style="flex-basis:320px"><h3>Will I know how my child is doing?</h3><p>Every month you get a short WhatsApp report, and you can message the teacher any time.</p></div>
+    </div>
+  </div></section>
+</div>
 
-<section class="sec" id="faq"><div class="wrap">
-  <div class="sec-head"><h2 class="h2">Parents ask us</h2><p class="ar-title" lang="ar" dir="rtl" style="font-size:24px">أسئلة الأهل</p></div>
-  <div class="row">
-    <div class="faq" style="flex-basis:320px"><h3>Is my child too young to start?</h3><p>Kids Club starts at 5. Younger kids learn through stories, songs and games, not grammar drills.</p></div>
-    <div class="faq" style="flex-basis:320px"><h3>My child is behind at school. Can you help?</h3><p>Yes. School Support is grouped by grade and works on the actual school material, so we start from where your child is in class.</p></div>
-    <div class="faq" style="flex-basis:320px"><h3>Will I know how my child is doing?</h3><p>Every month you get a short WhatsApp report, and you can message the teacher any time.</p></div>
-    <div class="faq" style="flex-basis:320px"><h3>Can we switch between cities?</h3><p>Yes. Members can make up a missed class in any of our cities or online.</p></div>
-  </div>
-</div></section>
-
-<section class="sec" id="contact"><div class="wrap">
-  <div class="contact">
-    <div class="lead">
+<!-- =================== REGISTER (shown under every tab) =================== -->
+<section class="wrap" id="register">
+  <div class="contact reveal">
+    <div class="lead2">
       <h2 class="h2">Register or ask a question</h2>
-      <p class="ar-title" lang="ar" dir="rtl">سجّلوا أو اسألونا</p>
+      <p class="tagline" lang="ar" dir="rtl" style="font-family:'Tajawal',sans-serif">سجّلوا أو اسألونا</p>
       <p>Fill this in and it opens WhatsApp with your message ready to send. We reply the same day.</p>
-      <p>WhatsApp: <strong id="wa-shown"></strong><br>Instagram: <strong>@levelup.learning.il</strong></p>
+      <p>WhatsApp: <strong data-wa-number dir="ltr">053-280-9020</strong><br>Instagram: <strong>@levelup.learning.il</strong></p>
     </div>
     <form id="book">
       <label for="f-name">Parent or student name<input id="f-name" name="name" type="text" autocomplete="name" required></label>
       <div class="two">
         <label for="f-prog">Program<select id="f-prog" name="program">
-          <option>Kids Club (5–12)</option><option>School Support (7–12)</option><option>Courses (adults)</option><option>Exam prep (Psychometric, AMIRNET, TOEFL, IELTS, SAT)</option><option>Private</option><option>Private at home</option>
+          <option>Kids Club (5–12)</option><option>School Support &amp; Bagrut (7–12)</option><option>Adults: travel English</option><option>Adults: business English</option><option>Adults: conversation / writing</option><option>Exam prep (Psychometric, AMIRNET, TOEFL, IELTS, SAT)</option><option>Private lessons</option><option>Private lessons at home</option>
         </select></label>
-        <label for="f-age">Student age or grade<input id="f-age" name="age" type="text" placeholder="e.g. 9 / grade 10"></label>
+        <label for="f-age">Student age or grade<input id="f-age" name="age" type="text" placeholder="e.g. 9 / grade 10 / adult"></label>
       </div>
       <label for="f-town">Town<input id="f-town" name="town" type="text" placeholder="e.g. Zalafa" required></label>
       <button class="btn btn-yellow" type="submit">Send on WhatsApp</button>
       <p class="note">Nothing is stored on this website. Your message goes straight to our WhatsApp.</p>
     </form>
   </div>
-</div></section>
+</section>
 </main>
 
 <footer><div class="wrap">
-  <span>© <span id="yr">2026</span> Level Up Learning Center · <span class="ar" lang="ar">مركز ليفل أب التعليمي</span></span>
-  <span>English now · Math coming soon</span>
+  <span>© <span id="yr">2026</span> Level Up Learning Center · <span lang="ar" style="font-family:'Tajawal',sans-serif">مركز ليفل أب التعليمي</span></span>
 </div></footer>
 
-<a class="wa" id="wa-float" href="#" aria-label="Chat with us on WhatsApp">
+<a class="wa" data-wa-link href="https://wa.me/972532809020" aria-label="Chat with us on WhatsApp">
   <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>
 </a>
 
-<script>
-/* ===== EDIT HERE: your WhatsApp number, international format, no + or spaces (05X-XXX-XXXX -> 9725XXXXXXXX) ===== */
-const WHATSAPP = "972532809020";
-
-const pretty = "0" + WHATSAPP.slice(3, 5) + "-" + WHATSAPP.slice(5, 8) + "-" + WHATSAPP.slice(8);
-document.getElementById("wa-shown").textContent = pretty;
-document.getElementById("yr").textContent = new Date().getFullYear();
-const hello = "مرحبا! Hi, I'd like to ask about English lessons at Level Up.";
-document.getElementById("wa-float").href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(hello);
-
-document.getElementById("book").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const f = new FormData(this);
-  const msg = [
-    "مرحبا! Hi, I'd like to register for lessons at Level Up.",
-    "Name: " + f.get("name"),
-    "Program: " + f.get("program"),
-    "Age/grade: " + (f.get("age") || "-"),
-    "Town: " + f.get("town")
-  ].join("\n");
-  window.location.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg);
-});
-</script>
+<script src="/assets/site.js"></script>
 </body>
 </html>
