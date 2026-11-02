@@ -71,12 +71,16 @@ nav a.cta{background:var(--navy);color:#fff;padding:10px 18px;border-radius:999p
 .level-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .level-top b{font-family:var(--display);font-size:22px}
 .tag{background:#BDEBDD;color:#0E5B49;font-weight:800;font-size:13px;padding:4px 10px;border-radius:999px}
-.badges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.badge{aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:26px}
-.badge.off{border:3px dashed #B7C3D9;color:#8A97B2}
-.badge.now{box-shadow:0 0 0 4px #fff,0 0 0 7px var(--navy)}
 .bar{height:14px;background:var(--line);border-radius:999px;overflow:hidden}
 .bar i{display:block;width:60%;height:100%;background:var(--mint);border-radius:999px}
+.report{background:#E7F7EE;border-radius:18px 18px 18px 4px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.report .who{margin:0;font-weight:800;font-size:15px}
+.report ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.report li{display:flex;gap:8px;align-items:flex-start}
+.ck{flex:0 0 auto;width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314213D' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.skills{display:flex;flex-direction:column;gap:10px}
+.sk{display:flex;justify-content:space-between;font-weight:700;font-size:14px;margin-bottom:4px}
+.report .time{margin:0;font-size:12px;color:var(--muted);text-align:right}
 .small{font-size:15px;color:var(--muted);margin:0}
 
 /* trust strip */
@@ -205,21 +209,22 @@ footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:spac
         <a class="btn" href="#programs">See programs &amp; prices</a>
       </div>
     </div>
-    <div class="level" aria-label="Example level card: levels A1 to C2, currently B1, 60% of the way to B2">
-      <div class="level-top"><b>My English level</b><span class="tag">Level up!</span></div>
-      <div class="badges" aria-hidden="true">
-        <div class="badge" style="background:var(--coral)">A1</div>
-        <div class="badge" style="background:var(--yellow)">A2</div>
-        <div class="badge now" style="background:var(--mint)">B1</div>
-        <div class="badge off">B2</div>
-        <div class="badge off">C1</div>
-        <div class="badge off">C2</div>
+    <div class="level" aria-label="Example of the monthly progress report parents receive on WhatsApp">
+      <div class="level-top"><b>Monthly report</b><span class="tag">Example</span></div>
+      <div class="report">
+        <p class="who">Lina · Grade 5 · Kids Club</p>
+        <ul>
+          <li><span class="ck" aria-hidden="true"></span>Covered: past simple, reading short stories aloud</li>
+          <li><span class="ck" aria-hidden="true"></span>Homework: 7 of 8 done</li>
+          <li><span class="ck" aria-hidden="true"></span>Next month: writing short paragraphs</li>
+        </ul>
+        <div class="skills">
+          <div><div class="sk"><span>Reading</span><span>Great</span></div><div class="bar"><i style="width:80%"></i></div></div>
+          <div><div class="sk"><span>Speaking</span><span>Improving</span></div><div class="bar"><i style="width:60%;background:var(--yellow)"></i></div></div>
+        </div>
+        <p class="time">Sent on WhatsApp · 1st of the month</p>
       </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-weight:700;font-size:14px;margin-bottom:6px"><span>Progress to B2</span><span>60%</span></div>
-        <div class="bar"><i></i></div>
-      </div>
-      <p class="small">Every level a student finishes earns a new badge and a certificate to take home.</p>
+      <p class="small">Every parent gets a short update like this each month, so you always know how your child is doing.</p>
     </div>
   </div>
 </section>
